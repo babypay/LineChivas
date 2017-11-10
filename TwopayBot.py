@@ -6,26 +6,31 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE() #Sunny
-cl.login(token='Em516uVSBtjB15oHn5h8.VoezRrusHbD0WdiabXEkEa.CK3qq3DBEMbfG91Q1DTaUS8CJ9Ro+6/7TOvsLA5asuA=')
+cl.login(qr=True)
+#cl.login(token='Em516uVSBtjB15oHn5h8.VoezRrusHbD0WdiabXEkEa.CK3qq3DBEMbfG91Q1DTaUS8CJ9Ro+6/7TOvsLA5asuA=')
 cl.loginResult()
 
-ki = LINETCR.LINE() #Sonic
-ki.login(token='EmtKLLSXIWZDNw9bD8x4.pJjFxs531c00IsoBPdMjXa.9Og4894oIpysjMqAL/MQ5Vd2f2oSSGQHp7NznJB3A8I=')
+ki = LINETCR.LINE() #Sonia
+ki.login(qr=True)
+#ki.login(token='EmtKLLSXIWZDNw9bD8x4.pJjFxs531c00IsoBPdMjXa.9Og4894oIpysjMqAL/MQ5Vd2f2oSSGQHp7NznJB3A8I=')
 ki.loginResult()
 
-kk = LINETCR.LINE() #Sonora
-kk.login(token='EmfBawKIratTfq8VUTT6.mHgcPi/VVlZ0yx7KEKk2rG.P3ovIn1ImhNLQd3svkbQ7Dte3c66hr0Qytc31ThcQ6I=')
+kk = LINETCR.LINE() #Sonic
+kk.login(qr=True)
+#kk.login(token='EmfBawKIratTfq8VUTT6.mHgcPi/VVlZ0yx7KEKk2rG.P3ovIn1ImhNLQd3svkbQ7Dte3c66hr0Qytc31ThcQ6I=')
 kk.loginResult()
 
-kc = LINETCR.LINE() #Sonia
-kc.login(token='EmzVdhgWZJEieXA6aFN2./95zCpt+WBgJ8aql0oE5WG.qXDgfW4RI9sB0raK9TmQKLZzvwR8d91LLw6jTvU4xQI=')
+kc = LINETCR.LINE() #Sonora
+kc.login(qr=True)
+#kc.login(token='EmzVdhgWZJEieXA6aFN2./95zCpt+WBgJ8aql0oE5WG.qXDgfW4RI9sB0raK9TmQKLZzvwR8d91LLw6jTvU4xQI=')
 kc.loginResult()
 
 ks = LINETCR.LINE() #Sonica
-ks.login(token='Em2qNEGPAIu9nFd9xGh9.ggtwX7woXCbeYYiNNkTRcq.DbHh4AM1vFiQBtMonS9b9Ra+rPdE5USXZetcN4qlSPU=')
+ks.login(qr=True)
+#ks.login(token='Em2qNEGPAIu9nFd9xGh9.ggtwX7woXCbeYYiNNkTRcq.DbHh4AM1vFiQBtMonS9b9Ra+rPdE5USXZetcN4qlSPU=')
 ks.loginResult()
 
-print "login success plak"
+print "login success pay"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -57,13 +62,13 @@ KAC=[cl,ki,kk,kc,ks]
 #DEF8=[cl,ki,kk,kc,ks,ka,kb,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF9=[cl,ki,kk,kc,ks,ka,kb,ko,ku] Udah Ga Kepake(Boleh di apus)
 #DEF10=[cl,ki,kk,kc,ks,ka,kb,ko,ke] Udah Ga Kepake(Boleh di apus)
-mid = cl.getProfile().mid #Luffy
-Amid = ki.getProfile().mid #Zorro
-Bmid = kk.getProfile().mid #Sanji
-Cmid = kc.getProfile().mid #Ussop
-Dmid = ks.getProfile().mid #Chooper
+mid = cl.getProfile().mid #Sunny
+Amid = ki.getProfile().mid #Sonia
+Bmid = kk.getProfile().mid #Sonic
+Cmid = kc.getProfile().mid #Sonora
+Dmid = ks.getProfile().mid #Sonica
 
-Bots=["ubce119ad1512841774c0320007178a78","u3e325f5d2e77d42d3489239ba43989c4","u321182a48fafbcbcf4617ee47a42b646","ufbde5970f4ffc1b1a3f0040bd0e7b9c2","u1864d6c7b58ec5c044cb22279cab6b09"]
+Bots=["ubce119ad1512841774c0320007178a78","ufbde5970f4ffc1b1a3f0040bd0e7b9c2","u3e325f5d2e77d42d3489239ba43989c4","u321182a48fafbcbcf4617ee47a42b646","u1864d6c7b58ec5c044cb22279cab6b09"]
 admin=["u49f93172b8c8865683dd2d47ccbb8613","ubce119ad1512841774c0320007178a78","u3e325f5d2e77d42d3489239ba43989c4","u321182a48fafbcbcf4617ee47a42b646","ufbde5970f4ffc1b1a3f0040bd0e7b9c2"] 
 owner=["u49f93172b8c8865683dd2d47ccbb8613"]
 wait = {
@@ -102,11 +107,11 @@ Idline: http://line.me/ti/p/~mrtwopay""",
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"",
-    "cName2":"",
-    "cName3":"",
-    "cName4":"",
-    "cName5":"",
+    "cName":"™Sunny™ ",
+    "cName2":"™Sonia™ ",
+    "cName3":"™Sonic™ ",
+    "cName4":"™Sonora™ ",
+    "cName5":"™Sonica™ ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -630,24 +635,24 @@ def bot(op):
                     cl.updateGroup(X)
                 else:
                     cl.sendText(msg.to,"It can't be used besides the group.")
-            elif ("Sonic gn " in msg.text):
-                if msg.toType == 2:
-                    X = cl.getGroup(msg.to)
-                    X.name = msg.text.replace("Sonic gn ","")
-                    ki.updateGroup(X)
-                else:
-                    ki.sendText(msg.to,"It can't be used besides the group.")
-            elif ("Sonora gn " in msg.text):
-                if msg.toType == 2:
-                    X = cl.getGroup(msg.to)
-                    X.name = msg.text.replace("Sonora gn ","")
-                    kk.updateGroup(X)
-                else:
-                    kk.sendText(msg.to,"It can't be used besides the group.")
             elif ("Sonia gn " in msg.text):
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
                     X.name = msg.text.replace("Sonia gn ","")
+                    ki.updateGroup(X)
+                else:
+                    ki.sendText(msg.to,"It can't be used besides the group.")
+            elif ("Sonic gn " in msg.text):
+                if msg.toType == 2:
+                    X = cl.getGroup(msg.to)
+                    X.name = msg.text.replace("Sonic gn ","")
+                    kk.updateGroup(X)
+                else:
+                    kk.sendText(msg.to,"It can't be used besides the group.")
+            elif ("Sonora gn " in msg.text):
+                if msg.toType == 2:
+                    X = cl.getGroup(msg.to)
+                    X.name = msg.text.replace("Sonora gn ","")
                     kc.updateGroup(X)
                 else:
                     kc.sendText(msg.to,"It can't be used besides the group.")
@@ -655,15 +660,15 @@ def bot(op):
               if msg.from_ in admin:
                 midd = msg.text.replace("Kick ","")
                 random.choice(KAC).kickoutFromGroup(msg.to,[midd])
-            elif "Sonic kick " in msg.text:
+            elif "Sonia kick " in msg.text:
               if msg.from_ in admin:
                 midd = msg.text.replace("_second kick ","")
                 ki.kickoutFromGroup(msg.to,[midd])
-            elif "Sonora kick " in msg.text:
+            elif "Sonic kick " in msg.text:
               if msg.from_ in admin:
                 midd = msg.text.replace("_third kick ","")
                 kk.kickoutFromGroup(msg.to,[midd])
-            elif "Sonia kick " in msg.text:
+            elif "Sonora kick " in msg.text:
               if msg.from_ in admin:
                 midd = msg.text.replace("_fourth kick ","")
                 kc.kickoutFromGroup(msg.to,[midd])
@@ -672,17 +677,17 @@ def bot(op):
                 midd = msg.text.replace("Invite ","")
                 cl.findAndAddContactsByMid(midd)
                 cl.inviteIntoGroup(msg.to,[midd])
-            elif "Sonic invite " in msg.text:
+            elif "Sonia invite " in msg.text:
               if msg.from_ in admin:
                 midd = msg.text.replace("sinvite ","")
                 ki.findAndAddContactsByMid(midd)
                 ki.inviteIntoGroup(msg.to,[midd])
-            elif "Sonora invite " in msg.text:
+            elif "Sonic invite " in msg.text:
               if msg.from_ in admin:
                 midd = msg.text.replace("tinvite ","")
                 kk.findAndAddContactsByMid(midd)
                 kk.inviteIntoGroup(msg.to,[midd])
-            elif "Sonia invite " in msg.text:
+            elif "Sonora invite " in msg.text:
               if msg.from_ in admin:
                 midd = msg.text.replace("finvite ","")
                 kc.findAndAddContactsByMid(midd)
@@ -869,7 +874,7 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': msg.from_}
                 random.choice(KAC).sendMessage(msg)
-            elif msg.text in ["Sonora"]:
+            elif msg.text in ["Sonic"]:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Bmid}
                 kk.sendMessage(msg)
@@ -943,7 +948,7 @@ def bot(op):
                         random.choice(KAC).sendText(msg.to,"Can not be used outside the group")
                     else:
                         random.choice(KAC).sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Sonic buka qr","Sonic open qr"]:
+            elif msg.text in ["Sonia buka qr","Sonia open qr"]:
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
                     X.preventJoinByTicket = False
@@ -957,7 +962,7 @@ def bot(op):
                         cl.sendText(msg.to,"Can not be used outside the group")
                     else:
                         cl.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Sonora buka qr","Sonora open qr"]:
+            elif msg.text in ["Sonic buka qr","Sonic open qr"]:
                 if msg.toType == 2:
                     X = ki.getGroup(msg.to)
                     X.preventJoinByTicket = False
@@ -971,7 +976,7 @@ def bot(op):
                         ki.sendText(msg.to,"Can not be used outside the group")
                     else:
                         ki.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Sonia open qr","Sonia buka qr"]:
+            elif msg.text in ["Sonora open qr","Sonora buka qr"]:
                 if msg.toType == 2:
                     X = kc.getGroup(msg.to)
                     X.preventJoinByTicket = False
@@ -1000,7 +1005,7 @@ def bot(op):
                         random.choice(KAC).sendText(msg.to,"Can not be used outside the group")
                     else:
                         random.choice(KAC).sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Sonic close qr","Sonic tutup qr"]:
+            elif msg.text in ["Sonia close qr","Sonia tutup qr"]:
                 if msg.toType == 2:
                     X = ki.getGroup(msg.to)
                     X.preventJoinByTicket = True
@@ -1014,7 +1019,7 @@ def bot(op):
                         ki.sendText(msg.to,"Can not be used outside the group")
                     else:
                         ki.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Sonora tutup qr","Sonora close qr"]:
+            elif msg.text in ["Sonic tutup qr","Sonic close qr"]:
                 if msg.toType == 2:
                     X = kk.getGroup(msg.to)
                     X.preventJoinByTicket = True
@@ -1028,7 +1033,7 @@ def bot(op):
                         kk.sendText(msg.to,"Can not be used outside the group")
                     else:
                         kk.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Sonia tutup qr","Sonia close qr"]:
+            elif msg.text in ["Sonora tutup qr","Sonora close qr"]:
                 if msg.toType == 2:
                     X = kc.getGroup(msg.to)
                     X.preventJoinByTicket = True
@@ -1101,13 +1106,13 @@ def bot(op):
             elif "Sunny" == msg.text:
               if msg.from_ in admin:
                 cl.sendText(msg.to,mid)
-            elif "Sonic" == msg.text:
+            elif "Sonia" == msg.text:
               if msg.from_ in admin:
                 ki.sendText(msg.to,Amid)
-            elif "Sonora" == msg.text:
+            elif "Sonic" == msg.text:
               if msg.from_ in admin:
                 kk.sendText(msg.to,Bmid)
-            elif "Sonia" == msg.text:
+            elif "Sonora" == msg.text:
               if msg.from_ in admin:
                 kc.sendText(msg.to,Cmid)
             elif msg.text in ["Wkwkwk","Wkwk","Wk","wkwkwk","wkwk","wk"]:
@@ -1642,7 +1647,7 @@ def bot(op):
                         cl.sendText(msg.to,"Can't be used outside the group")
                     else:
                         cl.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Sonic gurl"]:
+            elif msg.text in ["Sonia gurl"]:
                 if msg.toType == 2:
                     x = cl.getGroup(msg.to)
                     if x.preventJoinByTicket == True:
@@ -1655,7 +1660,7 @@ def bot(op):
                         cl.sendText(msg.to,"Can't be used outside the group")
                     else:
                         cl.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Sonora gurl"]:
+            elif msg.text in ["Sonic gurl"]:
                 if msg.toType == 2:
                     x = cl.getGroup(msg.to)
                     if x.preventJoinByTicket == True:
@@ -1668,7 +1673,7 @@ def bot(op):
                         cl.sendText(msg.to,"Can't be used outside the group")
                     else:
                         cl.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Sonia gurl"]:
+            elif msg.text in ["Sonora gurl"]:
                 if msg.toType == 2:
                     x = cl.getGroup(msg.to)
                     if x.preventJoinByTicket == True:
@@ -1775,7 +1780,7 @@ def bot(op):
 
 #-----------------------------------------------
          #----------------Fungsi Join Group Start-----------------------#
-            elif msg.text in ["Kuy","Mbot","Join kuy"]: #Panggil Semua Bot
+            elif msg.text in ["Kuy","Mbot","Go.."]: #Panggil Semua Bot
               if msg.from_ in owner:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
@@ -1812,7 +1817,7 @@ def bot(op):
                   ki.updateGroup(G)
                   Ticket = ki.reissueGroupTicket(msg.to)
 
-            elif msg.text in ["Sonic join"]:
+            elif msg.text in ["Sonia join"]:
               if msg.from_ in admin:
                   x = cl.getGroup(msg.to)
                   x.preventJoinByTicket = False
@@ -1825,7 +1830,7 @@ def bot(op):
                   cl.updateGroup(G)
                   Ticket = cl.reissueGroupTicket(msg.to)
 
-            elif msg.text in ["Sonora join"]:
+            elif msg.text in ["Sonic join"]:
               if msg.from_ in admin:
                   x = cl.getGroup(msg.to)
                   x.preventJoinByTicket = False
@@ -1838,7 +1843,7 @@ def bot(op):
                   cl.updateGroup(G)
                   Ticket = cl.reissueGroupTicket(msg.to)
                   
-            elif msg.text in ["Sonia Join"]:
+            elif msg.text in ["Sonora Join"]:
               if msg.from_ in admin:
                   X = cl.getGroup(msg.to)
                   X.preventJoinByTicket = False
@@ -1879,7 +1884,7 @@ def bot(op):
                     except:
                         pass
                       
-            elif msg.text in ["Bye Sonic"]:
+            elif msg.text in ["Bye Sonia"]:
               if msg.from_ in owner:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
@@ -1887,7 +1892,7 @@ def bot(op):
                         ki.leaveGroup(msg.to)
                     except:
                         pass
-            elif msg.text in ["Bye Sonora"]:
+            elif msg.text in ["Bye Sonic"]:
               if msg.from_ in owner:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
@@ -1895,7 +1900,7 @@ def bot(op):
                         kk.leaveGroup(msg.to)
                     except:
                         pass
-            elif msg.text in ["Bye Sonia"]:
+            elif msg.text in ["Bye Sonora"]:
               if msg.from_ in owner:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
@@ -1927,7 +1932,7 @@ def bot(op):
     #-------------Fungsi Leave Group Finish---------------#
     
     #-------------Fungsi Tag All Start---------------#
-            elif msg.text in ["Tag all","Tag"]:
+            elif msg.text in ["Hadir","Tag","Anu","."]:
             	 if msg.from_ in admin:
                   group = cl.getGroup(msg.to)
                   nama = [contact.mid for contact in group.members]
@@ -1995,7 +2000,7 @@ def bot(op):
                             pass
         #----------------Fungsi Banned Kick Target Finish----------------------#                
 
-            elif "Ready op" in msg.text:
+            elif "Ready TB" in msg.text:
               if msg.from_ in owner:
                 if msg.toType == 2:
                     print "ok"
@@ -2217,7 +2222,7 @@ def bot(op):
                 cl.sendText(msg.to,h)
       #--------------List Group------------
        #------------ Keluar Dari Semua Group------
-            elif msg.text in ["Bot out","Op bye"]: # Keluar Dari Semua Group Yang Di dalem nya  ada bot(Kalo Bot Kalian Nyangkut di Group lain :D)
+            elif msg.text in ["Bot out","TB bye"]: # Keluar Dari Semua Group Yang Di dalem nya  ada bot(Kalo Bot Kalian Nyangkut di Group lain :D)
               if msg.from_ in owner:
                  gid = cl.getGroupIdsJoined()
                  gid = ki.getGroupIdsJoined()
@@ -2237,7 +2242,7 @@ def bot(op):
  #------------------------End---------------------
 
  #-----------------End-----------
-            elif msg.text in ["Op katakan hi"]:
+            elif msg.text in ["Tb katakan hi"]:
                 ki.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
@@ -2272,11 +2277,11 @@ def bot(op):
        #-------------Fungsi Respon Start---------------------#
             elif msg.text in ["Absen","Absen bot","Absen dulu","Respon"]:
               if msg.from_ in admin:
-                cl.sendText(msg.to,"Tukang Sayur On")
+                cl.sendText(msg.to,"Tukang Tikung On")
                 ki.sendText(msg.to,"Tukang Colli On")
-                kk.sendText(msg.to,"Tukang Boker On")
-                kc.sendText(msg.to,"Tukang Becak On")
-                ks.sendText(msg.to,"Tukang Boong")
+                kk.sendText(msg.to,"Tukang Modus On")
+                kc.sendText(msg.to,"Tukang Ngintip On")
+                ks.sendText(msg.to,"Tukang Boong On")
                 cl.sendText(msg.to,"Semua Udah Hadir Boss\nSiap Protect Group\nAman Gak Aman Yang Penting Anu")
       #-------------Fungsi Respon Finish---------------------#
                             
@@ -2318,7 +2323,7 @@ def bot(op):
               cl.sendText(msg.to,"======================")
               cl.sendMessage(msg)
               cl.sendText(msg.to,"======================")
-              cl.sendText(msg.to,"Itu Creator Kami Yang Pea 😜")
+              cl.sendText(msg.to,"Itu Creator Kami Yang Manis 😜")
                 
       #-------------Fungsi Chat ----------------
             elif msg.text in ["Woy","woy","Woi","woi","bot","Bot"]:
@@ -2467,7 +2472,7 @@ def autolike():
       if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
         try:
           cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
-          cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐Koplaxs⭐⭐👈\n\n™SMULE VOICE FAMILY™")
+          cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TWOPAY BOT ⭐⭐👈\n\nMr 2pay")
           ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
           ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Aku Juga Ikutin Boss Aku Like Status Kamu Ka\n\n Like Back yah Ka 😊")
           kk.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
@@ -2497,7 +2502,7 @@ def likePost():
                     kk.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
                     kc.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
                     ks.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto like by ^One Piece Bot^\nStatus Boss udah Kami Like\nOwner Kami :\nHanavy Koplaxs")
+                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto like by ^Twopay Bot^\nStatus Boss udah Kami Like\nOwner Kami :\nMr 2pay")
                     print "Like"
                 except:
                     pass
